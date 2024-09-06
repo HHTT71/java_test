@@ -1,0 +1,432 @@
+/*-------------------------
+   公共配置
+--------------------------*/
+html {
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    margin:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    box-sizing: border-box;
+    background:url(../img/bg.jpg) center center fixed;
+    background-size:  100% 100% ;
+ }
+ @font-face{font-family:electronicFont;src:url(../font/DS-DIGIT.TTF)}
+
+ .h180{
+     height: 2.25rem;
+ }
+ .h200{
+    height: 2.6rem;
+}
+ .h220{
+    height: 3.1rem;
+}
+.h900 {
+    height:11.5rem;
+}
+.w49 {
+    width:49%;
+}
+.mb01{
+    margin-bottom: 0.1rem;
+}
+
+/*-------------------------
+   标题区域
+--------------------------*/
+ .header .logo {
+    position: relative;
+    width: 100% ;
+    height: 1.1875rem;
+    font-size: 0.525rem;
+    font-weight: 800;
+    line-height: 1rem;
+    text-align: center;
+    letter-spacing: 0.025rem;
+    color: #02C5F9; 
+    background: url(../img/topTitle.png) no-repeat center top;
+    background-size:cover;
+ }
+ .header span {
+    font-size: 0.24rem;
+    color:rgba(255,255,255,.7);
+     position: absolute;
+     top: 0.15rem ;
+     left: 0.575rem;
+     font-family: electronicFont;
+    }
+.header .news {
+    position: absolute;
+    top: .06rem;
+    right:0;
+    height: .3375rem;
+    width: 6rem;
+    padding:0 .1rem;
+    background: linear-gradient(270deg, rgba(12, 116, 214, 0) 0%, rgba(43, 95, 216, 0.23) 100%);
+    box-shadow: 0px 3px 10px rgba(10, 70, 188, 0.5);
+}
+.header .icon {
+    position: absolute;
+    top: .06rem;
+    right: 5.65rem;
+    display: block;
+    width: .25rem;
+    height: .25rem;
+    background: url(../img/icon1.png) no-repeat;
+    background-size: 100% 100%;
+}
+.header .news .newlap {
+    width: 5.5rem;
+    height:.4rem;
+    overflow: hidden;
+    margin-left: 0.325rem;
+}
+
+.header .news .newlap ul  {
+    display: flex;
+    overflow: hidden; 
+}
+.header .news .newlap  ul li  {
+    float: left;
+    font-size: .1875rem;
+    color: #C4D3F5;
+    line-height:.31rem ;
+    overflow: hidden; 
+    margin-right: .625rem;
+}
+
+ /*-------------------------
+   主内容盒子区域
+--------------------------*/
+ .ContentArea {
+    display: flex;
+    min-height: 12.3rem;
+    max-width: 24rem;
+    padding: 0.25rem;
+    margin: 0 auto;
+}
+
+/*-------------------------
+   左侧内容区域
+--------------------------*/
+ .ContentArea .left {
+    flex: 5;
+    overflow: hidden;
+}
+
+/* 面板属性 */
+.ContentArea .left .panel {
+    height: 0.35rem;
+    border-right: 0.0125rem solid #03BCF6;
+    border-left:  0.0125rem solid #03BCF6;
+    background: linear-gradient(90deg, rgba(65, 132, 248, 0.05) 0%, #003398 49%, rgba(65, 132, 248, 0.05) 100%);
+    margin-bottom: .25rem;
+}
+
+/* 面板title */
+.ContentArea .left .panel .itemtitle{
+    font-size:0.2rem; 
+    color:#C4D3F5; 
+    text-align: center; 
+    line-height: 0.35rem;
+}
+/* 面板内容区 */
+.ContentArea .left .panel .itembox {
+    background: linear-gradient(360deg, rgba(12, 116, 214, 0.1) 0%, rgba(19, 50, 121, 0.1) 100%);
+    box-shadow: 0px 3px 10px rgba(10, 70, 188, 0.5);
+    padding: .0625rem;
+}
+
+/* 切换页签 */
+.ContentArea .left .panel .itembox .clicktab {
+    padding-left: 0.25rem;
+    height:0.2rem; 
+    line-height:0.2rem; 
+    text-align:center; 
+}
+.ContentArea .left .panel .itembox .clicktab li {
+    float: left;
+    font-size: .15rem;
+    display:inline-block; 
+    margin-right:0.2rem; 
+    color:#99b8ff; 
+    cursor:pointer;
+}
+.ContentArea .left .panel .itembox .clicktab li.actab {
+    display:inline-block; 
+    height: .3rem;
+    color:#99b8ff; 
+    border-bottom:2px solid #FECB00;
+}
+.contenttab li{ 
+    display:none;
+    width: 100%;
+}
+.contenttab li.actent{
+     display:block;
+}
+.contenttab div>ul>li{
+    display:block;
+    height:auto;
+}
+
+/* 水波纹图表 */
+.ContentArea .left .liquidfill {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 0.1rem;
+    padding: 0 0.25rem;
+    overflow: hidden;
+}
+.ContentArea .left .liquidfill .qiu .qiutop {
+    height: 2rem;
+    width: 2rem;
+}
+.ContentArea .left .liquidfill p {
+    font-size: .2rem;
+    color: #99B8FF;
+    text-align: center;
+    line-height: 0.425rem;  
+}
+
+/*-------------------------
+   中间地图区域
+--------------------------*/
+.ContentArea .main {
+  flex:2.5;
+  /* box-shadow: 0px 3px 10px rgba(10, 70, 188, 0.5); */
+  margin: 0 20px;
+  /* overflow: hidden; */
+}
+
+.ContentArea .main .panel {
+    position: relative;
+    height: 0.35rem;
+    border-right: 0.0125rem solid #03BCF6;
+    border-left:  0.0125rem solid #03BCF6;
+    background: linear-gradient(90deg, rgba(65, 132, 248, 0.05) 0%, #003398 49%, rgba(65, 132, 248, 0.05) 100%);
+    margin-bottom: 20px;
+}
+.ContentArea .main .panel .itemtitle{
+    font-size:0.2rem; 
+    color:#C4D3F5; 
+    text-align: center; 
+    line-height: 0.35rem;
+}
+
+.ContentArea .main .panel .itembox {
+    height:11.5rem;
+    background: linear-gradient(360deg, rgba(12, 116, 214, 0.1) 0%, rgba(19, 50, 121, 0.1) 100%);
+    box-shadow: 0px 3px 10px rgba(10, 70, 188, 0.5);
+}
+
+/* 地图数字组合区域 */
+.ContentArea .main .panel .no1{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.25rem;   
+}
+.ContentArea .main .panel .no1 .hd h4 {
+    font-size: 0.175rem;
+    color: #99B8FF;
+    margin-bottom:10px;
+}
+.ContentArea .main .panel .no1 .bd .plate {
+    width: 0.625rem;
+    height: 0.5375rem;
+    border: 1px solid #4184F8;
+    background: linear-gradient(180deg, #003398 0%, #115FFB 47%, #003398 100%);
+    font-size: 0.4rem;
+    color:#fff;
+    text-align: center;
+}
+/* 小三角形 */
+.down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-bottom: 1px;
+    border-style: solid;
+    border-width: 0.0875rem 0.05rem 0 0.05rem;
+    border-color: #12c4b2 transparent transparent transparent;
+}
+.up {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-bottom: 1px;
+    border-style: solid;
+    border-width: 0 0.05rem 0.0875rem 0.05rem;
+    border-color: transparent transparent #FF3D3D transparent;
+}
+.ContentArea .main .panel  .bd .numtext {
+    margin-left: 0.125rem;
+    height: 0.5375rem;
+}
+.ContentArea .main .panel  .bd .numtext span {
+    font-family: electronicFont;
+    display:block;
+    font-size: 0.28rem;  
+}
+.ContentArea .main .panel .bd .numtext p{
+    font-size: 0.175rem;
+    color:#fff;
+}
+
+.ContentArea .main .panel .no2{
+    position: absolute;
+    top: 1.7rem;
+    left: 0.25rem;   
+}
+.ContentArea .main .panel  .hd h4 {
+    font-size: 0.175rem;
+    color: #99B8FF;
+    margin-bottom:10px;
+}
+.ContentArea .main .panel  .bd .plate {
+    width: 0.625rem;
+    height: 0.5375rem;
+    border: 1px solid #4184F8;
+    font-family: electronicFont;
+    background: linear-gradient(180deg, #003398 0%, #115FFB 47%, #003398 100%);
+    font-size: 0.4rem;
+    line-height:0.5375rem;
+    color:#fff;
+    text-align: center;
+}
+
+/*-------------------------
+   滚动信息区域
+--------------------------*/
+.ContentArea .right {
+  flex: 2.5;
+  /* box-shadow: 0px 3px 10px rgba(10, 70, 188, 0.5); */
+  overflow: hidden;
+}
+.ContentArea .right .major {
+    margin-top: 5.69rem;
+}
+.ContentArea .right .panel {
+    height: 0.35rem;
+    border-right: 0.0125rem solid #03BCF6;
+    border-left:  0.0125rem solid #03BCF6;
+    background: linear-gradient(90deg, rgba(65, 132, 248, 0.05) 0%, #003398 49%, rgba(65, 132, 248, 0.05) 100%);
+    /* margin-bottom: 20px; */
+}
+.ContentArea .right .panel .itemtitle{
+    font-size:0.2rem; 
+    color:#C4D3F5; 
+    text-align: center; 
+    line-height: 0.35rem;
+}
+.ContentArea .right .panel .itembox {
+    height:5.4rem;
+    background: linear-gradient(360deg, rgba(12, 116, 214, 0.1) 0%, rgba(19, 50, 121, 0.1) 100%);
+    box-shadow: 0px 3px 10px rgba(10, 70, 188, 0.5);
+    padding: 0.175rem 0.175rem  0.175rem 0.175rem; 
+    overflow-y: hidden;
+}
+.ContentArea .right .panel .itembox .scroll-list{
+    margin-top: 10px;
+    overflow: hidden;
+    height: 5.4rem;
+}
+.ContentArea .right .panel .itembox .scroll-list li {
+    margin-bottom: 25px;   
+}
+
+.ContentArea .right .panel .itembox .scroll-list .time {
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.225rem;  
+}
+.ContentArea .right .panel .itembox .scroll-list .time h4 {
+    font-family: 微软雅黑;
+    float: left;
+    color: #C4D3F5;
+}
+.ContentArea .right .panel .itembox .scroll-list .time span {
+  float: right;
+  font-size: 0.19rem;
+  color:#C4D3F5;
+}
+.ContentArea .right .panel .itembox .scroll-list .roll-body {
+    height:4.5rem;
+    /* background-color: rgba(255,255,255,.1); */
+    background: linear-gradient(360deg, rgba(12, 116, 214, 0.1) 0%, rgba(19, 50, 121, 0.1) 100%);
+    margin-top: 10px;
+    cursor:pointer;
+}
+.scroll-list .roll-body table{
+    width: 100%;
+}
+.scroll-list .roll-body  thead th{
+    font-size: 0.175rem;
+    color:#99B8FF;
+}
+.scroll-list .roll-body  tbody td{
+    font-size: 0.175rem;
+    color:#C4D3F5;
+}
+thead th:nth-child(1) {
+    width: 65%;
+  }
+thead th:nth-child(2) {
+    width: 35%;
+  }
+
+th, td {
+    text-align: left;
+    padding: 0.09rem 0 0.1rem 0.155rem;
+  }
+p.road {
+    width:2.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#C4D3F5;
+  }
+  p.text {
+    font-size: 0.175rem;
+    color:#C4D3F5;
+    width: 96%; 
+    overflow: hidden;    
+    display: -webkit-box;
+    text-overflow:ellipsis;    
+    -webkit-line-clamp:4;
+    -webkit-box-orient: vertical
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------
+   滚动官方配置liMarquee.css
+--------------------------*/
+.str_wrap {/*zoom:1;*/position:relative; line-height:16px; font-size:12px; white-space:nowrap; -moz-user-select:none; -khtml-user-select:none; user-select:none; overflow:hidden;}
+
+.str_move{ position:absolute; top:0; left:0; white-space:nowrap; cursor:move;}
+.str_move_clone{ position:absolute; left:100%; top:0; display:inline-block; /*display:inline; zoom:1;*/ vertical-align:top;}
+.str_vertical .str_move_clone{left:0; top:100%;}
+.str_down .str_move_clone{ left:0; bottom:100%;}
+.str_vertical .str_move,
+.str_down .str_move { width:100%; white-space:normal;}
+.str_static .str_move,
+.no_drag .str_move,
+.noStop .str_move{ cursor:inherit;}
+.str_wrap img { max-width:none !important;}
+
